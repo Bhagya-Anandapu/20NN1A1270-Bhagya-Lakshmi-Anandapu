@@ -1,0 +1,128 @@
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        nav {
+  background-color: #40394b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  align-items: center;
+  list-style: none;
+  background-color: #a899e9;
+  padding: 10px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  padding: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #24202b;
+    text-shadow: 2px 2px 4px #a899e9;
+    
+}
+.cta-button {
+  background-color: #2a1e33;
+  color: #f5eded;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #382a49;
+}
+.page{
+    background-image: url('store.png') ;
+    background-size: cover;
+}
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div>
+            <nav>
+                <a href="#" class="logo">Optical World</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a>
+            <ul>
+                <li><a href="#">Glasses</a></li>
+                <li><a href="#">Sunglasses</a></li>
+                <li><a href="#">Contact Lenses</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+              </nav>
+        </div>
+        <div class="title"><h1>Optical World</h1>
+            <h3>Find the perfect pair of glasses for you</h3>
+            <button class="cta-button">Explore -></button>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
